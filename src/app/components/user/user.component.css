@@ -1,11 +1,11 @@
 section {
     max-width: 500px;
     margin: 0 auto;
-    padding-top: 150px;
+    padding-top: 220px;
     font-size: 24px;
     text-align: center;
     position: relative;
-  }
+}
   
   /* Estilos para la caja */
   .box {
@@ -98,9 +98,22 @@ img {
     right: 0;
     margin-top: 100px;
   }  
-h1 {
+
+p {
     position: absolute;
-    left: 0; /* Cambio de right a left */
-    margin-top: 200px;
-    font-size: 20px
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80%;
+    max-width: 450px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    text-align: center;
+    color: #333;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
 }
+
