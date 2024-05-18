@@ -1,0 +1,56 @@
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000;
+    transition: background-color 0.5s ease; /* Transición suave para el cambio de color de fondo */
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Animación de cambio de color de fondo */
+@keyframes changeColor {
+    0% { background-color: #007bff; } /* Color inicial */
+    50% { background-color: #4e86e4; } /* Color intermedio */
+    100% { background-color: #007bff; } /* Color final */
+}
+
+/* Aplicar la animación a la barra de navegación */
+.navbar.animate-color {
+    animation: changeColor 5s infinite; /* Repite la animación infinitamente durante 5 segundos */
+}
+    
+/* Estilos para el tema claro */
+body {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  /* Estilos para el tema oscuro */
+  .dark-theme body {
+    background-color: #333333;
+    color: #ffffff;
+  }
+  

@@ -1,0 +1,21 @@
+<h1>El proyecto consiste en la creación de una plataforma web <br>que automatiza los procesos de gestión de contratistas <br>para empresas, ofreciendo una solución eficiente y segura <br>  para la administración de contratos por prestación <br>  de servicios.<br> Con un enfoque en la navegación intuitiva y la facilidad de uso, nuestro software busca optimizar el tiempo y reducir los riesgos asociados con la gestión manual de documentación, brindando una herramienta valiosa especialmente para pequeñas y medianas empresas en crecimiento.</h1>
+<section>
+  <div class="box">
+      @if (isLoggedIn){
+        <app-home></app-home>
+
+      }@else{
+      <h2>Inicie sesión <br>Regístrese</h2>
+      <nav class="navbar animate-color">
+        <ul>
+            <li><a font-size = "10px">Inicie sesión para visualizar su información!</a></li>
+
+        </ul>
+      </nav>
+      }
+
+    <button (click)="isLoggedIn = true">Iniciar sesión</button>
+    <button (click)="isLoggedIn = true">Registrarse</button>
+  </div>
+</section>
+<img src="../../../assets/logo.png" alt="Logo de la empresa">
